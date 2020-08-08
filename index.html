@@ -3,40 +3,216 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <title>Document</title>
+        <style>
+
+            #main #main_content{
+                width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+                border: 1px solid black;
+            }
+            #main_profile {
+                width: 100%;
+                height: 600px;
+                background-image: url(img/pexels-soumil-kumar-735911.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: .8;
+            }
+            #main_profile > #main_profile_txt {
+                /* border: 1px solid white; */
+                position: relative;
+                top: 200px;
+                /* text-align: center; */
+
+
+            }
+            #main_profile  span {
+                color: white;
+                /* border: 1px solid white; */
+                display: block;
+
+            }
+            #main_profile_txt > span:first-child {
+                width: 200px;
+                margin-left: 400px;
+                text-align: center;
+                font-size: 2.5em;
+            }  
+            #main_profile_txt > span:nth-child(2) {
+                width: 600px;
+                margin-left: 200px;
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            #main_profile > #main_profile_img {
+                border: 2px solid white;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+                top: 180px;
+                left: 400px;
+
+                /* margin-left: 200px;
+                margin-top: 80px; */
+            }
+            #main_profile > #main_profile_img > img {
+                width: 200px;
+                /* height: 200px; */
+                /* border-radius: 50%; */
+            }
+
+            /* --------------------------------------------- */
+
+            #skills {
+                width: 100%;
+                height: 800px;
+                background-image: url(img/pexels-la-miko-3616764.jpg);
+                background-size: cover;
+                opacity: .7;
+            
+            }
+
+            #skills > #skills_txt {
+                /* border: 1px solid black; */
+                /* margin-top: 20px; */
+                position: relative;
+                top: 150px;
+            
+            }
+            #skills > #skills_txt > span {
+                display: block;
+                text-align: center;
+            }
+
+            #skills > #skills_txt > span:nth-child(1) {
+                font-size: 2em;
+                color: #333;
+            }
+            #skills > #skills_txt > span:nth-child(2) {
+                padding: 0 200px;
+                font-size: 1.02em;
+                color: #f9f9f9;
+            }
+
+            #skills > #skill_list {
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 300px;
+                margin-top: 200px;
+                /* padding-left: 20px; */
+            }
+            #skills > #skill_list >.skill:first-child{
+                margin-left: 65px;
+            }
+            #skills > #skill_list >.skill {
+                /* border: 1px solid black; */
+                border-radius: 3px;
+                width: 200px;
+                height: 300px;
+                float: left;
+                margin-left: 20px;
+                background-color: #fdfdfd;
+                box-shadow: 0px 2px 5px #888;
+
+            }
+
+            #skill_progress {
+                width: 100%;
+                height: 800px;
+                background-color: #ddd;
+            }
+
+            #skill_progress > #progress_list {
+                position: relative;
+                width: 800px;
+                top: 200px;
+
+            }
+
+            #skill_progress > #progress_list > div {
+                width: 300px;
+            }
+
+        </style>
     </head>
     <body>
         <!-- index.html -->
-        <h1>Portfolio</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eum
-            sequi non tempora perspiciatis beatae quos quas, accusantium
-            quisquam numquam, maxime debitis ipsa voluptates quaerat atque minus
-            eveniet vel laborum.
-        </p>
-        <p>
-            Iure, provident autem nam ipsam quibusdam quas inventore ut omnis
-            illum, id earum tempora perspiciatis reiciendis, delectus tenetur
-            dolore reprehenderit dicta! Magnam, eum cum? Facilis porro illum at
-            quas explicabo!
-        </p>
-        <p>
-            Pariatur, saepe fugit iure aspernatur sapiente molestiae!
-            Necessitatibus consectetur voluptate laborum dicta ut recusandae aut
-            qui, animi non dolorem sequi deserunt reprehenderit a, dolore veniam
-            dolorum vel nihil, expedita voluptatibus?
-        </p>
-        <p>
-            Ullam fugit iusto modi enim quidem nostrum harum deserunt
-            praesentium quos dignissimos odio, voluptas, neque a quam
-            distinctio! Harum voluptatum porro tempora nihil fuga dolores
-            deleniti impedit? Praesentium, facilis deserunt!
-        </p>
-        <p>
-            Itaque sapiente nisi mollitia pariatur quis provident esse amet
-            velit beatae ab, fugiat reiciendis distinctio asperiores dolor
-            veritatis excepturi magnam quas aut sed. Magnam harum fugit amet,
-            impedit aspernatur sunt!
-        </p>
+
+        <div class="container" id="main">
+            <div id="top_menu"></div>
+            <div id="main_content">
+                <div id="main_profile">
+                    <div id="main_profile_img">
+                        <img src="img/pexels-dominika-roseclay-2023384.jpg">
+                    </div>
+                    <div id="main_profile_txt">
+                        <span>main title</span>
+                        <span>
+                            Lorem ipsum dolor sit 
+                            amet consectetur adipisicing elit. Hic, dolor. 
+                            Totam nesciunt hic at vitae assumenda aliquid explicabo 
+                            amet beatae.
+                        </span>
+                    </div>
+
+                </div>
+                <div id="skills">
+                    <div id="skills_txt">
+                        <span>skills</span>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptatibus ullam quo laudantium natus harum quam, nobis deserunt 
+                            corrupti accusantium inventore!
+                        </span>
+                    </div>
+                    <div id="skill_list">
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                    </div>
+                </div>
+                <div id="skill_progress">
+                    <div id="progress_list">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          60%
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          60%
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          60%
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          60%
+                        </div>
+                      </div>
+                    </div>
+                      
+
+
+                </div>
+                <div id="skill_menu"></div>
+                <div id="main_feature"></div>
+                <div id="imgs"></div>
+            </div>
+
+
+        </div>
+        
     </body>
 </html>
