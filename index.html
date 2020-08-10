@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/bootstrap.js"></script>
         <title>Document</title>
         <style>
-
-            #main #main_content{
+            #main #main_content {
                 width: 1000px;
                 height: 100%;
                 margin: 0 auto;
@@ -20,28 +20,25 @@
                 background-image: url(img/pexels-soumil-kumar-735911.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
-                opacity: .8;
+                opacity: 0.8;
             }
             #main_profile > #main_profile_txt {
                 /* border: 1px solid white; */
                 position: relative;
                 top: 200px;
                 /* text-align: center; */
-
-
             }
-            #main_profile  span {
+            #main_profile span {
                 color: white;
                 /* border: 1px solid white; */
                 display: block;
-
             }
             #main_profile_txt > span:first-child {
                 width: 200px;
                 margin-left: 400px;
                 text-align: center;
                 font-size: 2.5em;
-            }  
+            }
             #main_profile_txt > span:nth-child(2) {
                 width: 600px;
                 margin-left: 200px;
@@ -75,8 +72,7 @@
                 height: 800px;
                 background-image: url(img/pexels-la-miko-3616764.jpg);
                 background-size: cover;
-                opacity: .7;
-            
+                opacity: 0.7;
             }
 
             #skills > #skills_txt {
@@ -84,7 +80,6 @@
                 /* margin-top: 20px; */
                 position: relative;
                 top: 150px;
-            
             }
             #skills > #skills_txt > span {
                 display: block;
@@ -108,10 +103,10 @@
                 margin-top: 200px;
                 /* padding-left: 20px; */
             }
-            #skills > #skill_list >.skill:first-child{
+            #skills > #skill_list > .skill:first-child {
                 margin-left: 65px;
             }
-            #skills > #skill_list >.skill {
+            #skills > #skill_list > .skill {
                 /* border: 1px solid black; */
                 border-radius: 3px;
                 width: 200px;
@@ -120,7 +115,6 @@
                 margin-left: 20px;
                 background-color: #fdfdfd;
                 box-shadow: 0px 2px 5px #888;
-
             }
 
             #skill_progress {
@@ -134,7 +128,6 @@
                 width: 800px;
                 top: 200px;
                 left: 120px;
-
             }
 
             #skill_progress > #progress_list > div {
@@ -143,36 +136,92 @@
                 margin-left: 40px;
             }
 
-            #skill_progress >.progress {
+            #skill_progress > .progress {
                 height: 100px;
             }
+
+            /* ------------------------------------------- */
 
             #skill_menu {
                 width: 100%;
                 height: 800px;
                 background-color: #ccc;
             }
-
             #skill_menu > #menu_bar {
+                width: 800px;
+                margin-left: 100px;
+                text-align: center;
+            }
+            #skill_menu > #menu_bar > #menu_list {
                 /* border: 1px solid black; */
-                width: 600px;
-                height: 180px;
+                width: 650px;
+                height: 160px;
                 /* background-color: blanchedalmond; */
                 /* margin-top: 20px; */
 
-                position: relative;
+                /* position: relative;
                 top: 100px;
-                left: 175px;
+                left: 175px; */
+                margin-left: 90px;
+                margin-top: 40px;
                 overflow: hidden;
-
             }
-            #skill_menu > #menu_bar .menu{
+            #skill_menu > #menu_bar > #menu_list .menu {
                 border: 1px solid black;
                 width: 200px;
                 height: 100%;
                 float: left;
             }
+            /* #skill_menu > #menu_bar > #menu_list .menu:nth-child(1) {
+                background-color: tomato;
+            }
+            #skill_menu > #menu_bar > #menu_list .menu:nth-child(2) {
+                background-color: gold;
+            }
+            #skill_menu > #menu_bar > #menu_list .menu:nth-child(3) {
+                background-color: cornflowerblue;
+            }
+            #skill_menu > #menu_bar > #menu_list .menu:nth-child(4) {
+                background-color: green;
+            }
+            #skill_menu > #menu_bar > #menu_list.menu:nth-child(4) {
+                background-color: purple;
+            } */
 
+            #skill_menu > #menu_bar #left_btn,
+            #skill_menu > #menu_bar #right_btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: purple;
+                text-align: center;
+                padding-top: 12px;
+                color: white;
+                font-size: 1.6em;
+                display: block;
+                text-shadow: 2px 2px 2px #333;
+            }
+
+            #skill_menu > #menu_bar div#left_btn {
+                /* margin-top: 100px; */
+                position: relative;
+                top: 150px;
+                left: 20px;
+            }
+
+            #skill_menu > #menu_bar div#right_btn {
+                position: relative;
+                top: -102px;
+                left: 710px;
+            }
+
+            #skill_menu > #bar_content_list {
+                border: 1px solid black;
+                width: 900px;
+                height: 300px;
+                margin-left: 50px;
+                overflow: hidden;
+            }
         </style>
     </head>
     <body>
@@ -183,26 +232,24 @@
             <div id="main_content">
                 <div id="main_profile">
                     <div id="main_profile_img">
-                        <img src="img/pexels-dominika-roseclay-2023384.jpg">
+                        <img src="img/pexels-dominika-roseclay-2023384.jpg" />
                     </div>
                     <div id="main_profile_txt">
                         <span>main title</span>
                         <span>
-                            Lorem ipsum dolor sit 
-                            amet consectetur adipisicing elit. Hic, dolor. 
-                            Totam nesciunt hic at vitae assumenda aliquid explicabo 
-                            amet beatae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic, dolor. Totam nesciunt hic at vitae
+                            assumenda aliquid explicabo amet beatae.
                         </span>
                     </div>
-
                 </div>
                 <div id="skills">
                     <div id="skills_txt">
                         <span>skills</span>
                         <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Voluptatibus ullam quo laudantium natus harum quam, nobis deserunt 
-                            corrupti accusantium inventore!
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus ullam quo laudantium natus harum
+                            quam, nobis deserunt corrupti accusantium inventore!
                         </span>
                     </div>
                     <div id="skill_list">
@@ -215,69 +262,144 @@
                 <div id="skill_progress">
                     <div id="progress_list">
                         <div class="progress_box">
-                        <span>Web Design</span>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" 
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          60%
+                            <span>Web Design</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar progress-bar-striped"
+                                    role="progressbar"
+                                    aria-valuenow="60"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    style="width: 60%;"
+                                >
+                                    60%
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
 
-                    <div class="progress_box">
-                        <span>Developing</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" 
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          60%
+                        <div class="progress_box">
+                            <span>Developing</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar progress-bar-striped"
+                                    role="progressbar"
+                                    aria-valuenow="60"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    style="width: 60%;"
+                                >
+                                    60%
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
 
-                      <div class="progress_box">
-                          <span>Branding</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" 
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          60%
+                        <div class="progress_box">
+                            <span>Branding</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar progress-bar-striped"
+                                    role="progressbar"
+                                    aria-valuenow="60"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    style="width: 60%;"
+                                >
+                                    60%
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
 
-                      <div class="progress_box">
-                          <span>Progressing</span>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" 
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          60%
+                        <div class="progress_box">
+                            <span>Progressing</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar progress-bar-striped"
+                                    role="progressbar"
+                                    aria-valuenow="60"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    style="width: 60%;"
+                                >
+                                    60%
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-
-                    </div>
-                      
-
-
                 </div>
 
                 <div id="skill_menu">
                     <div id="menu_bar">
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-
+                        <div id="left_btn">
+                            <span class="glyphicon glyphicon-menu-left"></span>
+                        </div>
+                        <div id="menu_list">
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                        </div>
+                        <div id="right_btn">
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </div>
                     </div>
 
-
+                    <div id="bar_content_list">
+                        <div class="menu_bar_content" id="bar_content1">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo ipsa aut minima. Sapiente
+                                et exercitationem tempora amet deserunt,
+                                provident suscipit?</span
+                            >
+                        </div>
+                        <div class="menu_bar_content" id="bar_content1">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo ipsa aut minima. Sapiente
+                                et exercitationem tempora amet deserunt,
+                                provident suscipit?</span
+                            >
+                        </div>
+                        <div class="menu_bar_content" id="bar_content1">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo ipsa aut minima. Sapiente
+                                et exercitationem tempora amet deserunt,
+                                provident suscipit?</span
+                            >
+                        </div>
+                        <div class="menu_bar_content" id="bar_content1">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo ipsa aut minima. Sapiente
+                                et exercitationem tempora amet deserunt,
+                                provident suscipit?</span
+                            >
+                        </div>
+                        <div class="menu_bar_content" id="bar_content1">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo ipsa aut minima. Sapiente
+                                et exercitationem tempora amet deserunt,
+                                provident suscipit?</span
+                            >
+                        </div>
+                    </div>
                 </div>
                 <div id="main_feature"></div>
                 <div id="imgs"></div>
             </div>
-
-
         </div>
-        
     </body>
 </html>
